@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Envs
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+
+# Tooling
+.pytest_cache/
+.mypy_cache/
+.coverage
+coverage/
+
+# OS
+.DS_Store

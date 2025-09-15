@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  app:
+    build: .
+    container_name: demo-data-transform
+    environment:
+      - PORT=8002
+      - ALLOWED_ORIGINS=https://vividsuite.io,http://localhost:4321
+      - ALLOW_NETLIFY_WILDCARD=true
+    ports:
+      - "8002:8002"
+    restart: unless-stopped
